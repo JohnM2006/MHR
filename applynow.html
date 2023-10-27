@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>apply now
+ </title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georgia">
+</head>
+
+
+
+
+</body>
+</html>
+
+
+<body>
+    
+
+  <div class="w3-bar w3-border w3-card-4 w3-light-grey w3-padding">
+    <a href="home.html" class="w3-bar-item w3-button">Home</a>
+    <a href="menu.html" class="w3-bar-item w3-button">Job information</a>
+    <a href="applynow.html" class="w3-bar-item w3-button">apply now</a>
+    <a href="contacts.html" class="w3-bar-item w3-button">contacts</a>
+    <i class="fa-solid fa-train"></i>
+
+  </div>
+
+<form class="w3-container w3-card-4 w3-light-grey">
+  
+
+  <p>
+ 
+  <p>
+  <label>First name</label>
+  <input class="w3-input w3-border w3-round-xxlarge" name="last" type="text"></p>
+  <label>Surname</label>
+  <input class="w3-input w3-border w3-round-xxlarge" name="last" type="text"></p>
+    <label>Email</label>
+  <input class="w3-input w3-border w3-round-xxlarge" name="last" type="text"></p>
+      <label>Phone Number</label>
+  <input class="w3-input w3-border w3-round-xxlarge" name="last" type="text"></p>
+      <label>Work Experience</label>
+  <input class="w3-input w3-border w3-round-xxlarge" name="last" type="text"></p>
+</form>
+</div>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  
+
+  <div class="w3-light-grey">
+    <div id="myBar" class="w3-container w3-green" style="height:24px;width:0%">
+    </div>
+  </div>
+
+  <p id="myP">Added <span id="demo">0</span> of 10 photos</p>
+
+  <button class="w3-button w3-light-grey" onclick="move();this.disabled='true'">Upload Photos</button> 
+</div>
+
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+      document.getElementById("myP").className = "w3-text-green w3-animate-opacity";
+      document.getElementById("myP").innerHTML = "Successfully uploaded 10 photos!";
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      var num = width * 1 / 10;
+      num = num.toFixed(0)
+      document.getElementById("demo").innerHTML = num;
+    }
+  }
+}
+</script>
+</body>
+</html>
